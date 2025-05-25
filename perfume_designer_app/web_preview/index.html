@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Designer App - Preview</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #d4af37;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .app-preview {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .main-content {
+            flex: 1;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .pyramid-section {
+            margin-top: 20px;
+            border: 1px solid #d4af37;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .note-list {
+            background-color: #2e2e2e;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #2e2e2e;
+            border-radius: 4px;
+        }
+        h1, h2, h3 {
+            color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perfume Designer Application - Phase 1</h1>
+        <p>A fully offline, desktop-based perfume design application built with Python and PyQt6.</p>
+        
+        <div class="app-preview">
+            <div class="sidebar">
+                <h3>Navigation</h3>
+                <div class="feature-list">
+                    <div>Perfume Pyramid Builder</div>
+                    <!-- Future navigation items will be added here -->
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h2>Implemented Features</h2>
+                
+                <div class="pyramid-section">
+                    <h3>Perfume Pyramid Builder</h3>
+                    <ul class="feature-list">
+                        <li>Drag-and-drop interface for assigning fragrance notes</li>
+                        <li>Percentage controls for each note using sliders</li>
+                        <li>Visual pyramid structure representation</li>
+                        <li>Search/filter functionality for notes</li>
+                    </ul>
+                    
+                    <h3>Sample Notes Database</h3>
+                    <div class="note-list">
+                        <p>20 pre-loaded fragrance notes including:</p>
+                        <ul>
+                            <li>Top Notes: Bergamot, Lavender, Lemon, Peppermint</li>
+                            <li>Middle Notes: Jasmine, Rose, Ylang Ylang, Cinnamon</li>
+                            <li>Base Notes: Sandalwood, Vanilla, Patchouli, Amber</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pyramid-section">
+                    <h3>Technical Features</h3>
+                    <ul class="feature-list">
+                        <li>Dark theme with gold/amber accents</li>
+                        <li>Local SQLite database for fragrance notes</li>
+                        <li>Modular code structure for future expansion</li>
+                        <li>Responsive layout design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
